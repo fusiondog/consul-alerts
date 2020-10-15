@@ -1,3 +1,7 @@
+SEEKING MAINTAINERS!
+
+Welcome to the new home of the actively maintained consul-alerts.  Actively seeking maintainers to keep this project at production quality.  Preference given to anyone who has been a maintainer on the previous repo, submitted a previous PR, or is actively using consul-alerts in prod.
+
 consul-alerts
 =============
 
