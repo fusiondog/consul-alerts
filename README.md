@@ -5,7 +5,7 @@ Welcome to the new home of the actively maintained consul-alerts.  Actively seek
 consul-alerts
 =============
 
-[![Join the chat at https://gitter.im/AcalephStorage/consul-alerts](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/AcalephStorage/consul-alerts?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/fusiondog/consul-alerts](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/fusiondog/consul-alerts?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 A highly available daemon for sending notifications and reminders based on Consul health checks.
 
@@ -26,7 +26,7 @@ consul-alerts provides a high degree of configuration including:
 Releases
 --------
 
-Stable release are [here](https://github.com/AcalephStorage/consul-alerts/releases).
+Stable release are [here](https://github.com/fusiondog/consul-alerts/releases).
 
 Latest release are found here:
  - [darwin-amd64](https://bintray.com/artifact/download/darkcrux/generic/consul-alerts-latest-darwin-amd64.tar)
@@ -38,7 +38,7 @@ Installation
 ------------
 
 ```
-$ go get github.com/AcalephStorage/consul-alerts
+$ go get github.com/fusiondog/consul-alerts
 $ go install
 ```
 
