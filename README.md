@@ -546,6 +546,20 @@ prefix: `consul-alerts/config/notifiers/opsgenie/`
 | cluster-name | The name of the cluster. [Default: "Consul Alerts"] |
 | api-key      | API Key                              (mandatory)    |
 
+#### JSM
+
+To enable JSM built-in notifier, set
+`consul-alerts/config/notifiers/jsm/enabled` to `true`. JSM details
+needs to be configured.
+
+prefix: `consul-alerts/config/notifiers/jsm/`
+
+| key          | description                                         |
+|--------------|-----------------------------------------------------|
+| enabled      | Enable the JSM notifier. [Default: false]           |
+| cluster-name | The name of the cluster. [Default: "Consul Alerts"] |
+| api-key      | API Key                              (mandatory)    |
+
 #### Amazon Web Services Simple Notification Service ("SNS")
 
 To enable AWS SNS built-in notifier, set
