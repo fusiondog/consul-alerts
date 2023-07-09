@@ -50,7 +50,7 @@ type Notifiers struct {
 	PagerDuty         *PagerDutyNotifier         `json:"pagerduty"`
 	HipChat           *HipChatNotifier           `json:"hipchat"`
 	OpsGenie          *OpsGenieNotifier          `json:"opsgenie"`
-    JSM               *JSMNotifier               `json:"jsm"`
+        JSM               *JSMNotifier               `json:"jsm"`
 	AwsSns            *AwsSnsNotifier            `json:"awssns"`
 	VictorOps         *VictorOpsNotifier         `json:"victorops"`
 	HttpEndpoint      *HttpEndpointNotifier      `json:"http-endpoint"`
