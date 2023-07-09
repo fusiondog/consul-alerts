@@ -247,6 +247,7 @@ func builtinNotifiers() map[string]notifier.Notifier {
 	pagerdutyNotifier := consulClient.PagerDutyNotifier()
 	hipchatNotifier := consulClient.HipChatNotifier()
 	opsgenieNotifier := consulClient.OpsGenieNotifier()
+	jsmNotifier := consulClient.JSMNotifier()
 	awssnsNotifier := consulClient.AwsSnsNotifier()
 	victoropsNotifier := consulClient.VictorOpsNotifier()
 	httpEndpointNotifier := consulClient.HttpEndpointNotifier()
@@ -279,6 +280,9 @@ func builtinNotifiers() map[string]notifier.Notifier {
 	}
 	if opsgenieNotifier.Enabled {
 		notifiers[opsgenieNotifier.NotifierName()] = opsgenieNotifier
+	}
+	if jsmNotifier.Enabled {
+		notifiers[jsmNotifier.NotifierName()] = jsmNotifier
 	}
 	if awssnsNotifier.Enabled {
 		notifiers[awssnsNotifier.NotifierName()] = awssnsNotifier

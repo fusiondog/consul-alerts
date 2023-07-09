@@ -221,6 +221,14 @@ func (c *ConsulAlertClient) LoadConfig() {
 			case "consul-alerts/config/notifiers/opsgenie/api-key":
 				valErr = loadCustomValue(&config.Notifiers.OpsGenie.ApiKey, val, ConfigTypeString)
 
+				// JSM notifier config
+			case "consul-alerts/config/notifiers/jsm/enabled":
+				valErr = loadCustomValue(&config.Notifiers.JSM.Enabled, val, ConfigTypeBool)
+			case "consul-alerts/config/notifiers/jsm/cluster-name":
+				valErr = loadCustomValue(&config.Notifiers.JSM.ClusterName, val, ConfigTypeString)
+			case "consul-alerts/config/notifiers/jsm/api-key":
+				valErr = loadCustomValue(&config.Notifiers.JSM.ApiKey, val, ConfigTypeString)
+
 				// AwsSns notifier config
 			case "consul-alerts/config/notifiers/awssns/cluster-name":
 				valErr = loadCustomValue(&config.Notifiers.AwsSns.ClusterName, val, ConfigTypeString)
